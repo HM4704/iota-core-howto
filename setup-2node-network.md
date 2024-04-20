@@ -54,6 +54,14 @@ cd inx-faucet
 go build
 ```
 
+#### inx-dashboard
+
+```bash
+git clone https://github.com/iotaledger/inx-dashboard.git
+cd inx-dashboard
+go build
+```
+
 ### On the peer node
 
 #### iota-core
@@ -233,6 +241,11 @@ export "FAUCET_PRV_KEY=de52b9964dda96564e9fab362ab16c2669c715c6a2a853bece8a25fc5
 ./inx-faucet --inx.address=127.0.0.1:9029 --faucet.bindAddress=0.0.0.0:8091 --faucet.rateLimit.enabled=false --faucet.baseTokenAmount=1000000000 --faucet.baseTokenAmountSmall=100000000 --faucet.baseTokenAmountMaxTarget=5000000000 --faucet.manaAmount=100000000 --faucet.manaAmountMinFaucet=1000000000
 ```
 
+```bash
+./inx-dashboard --inx.address=localhost:9029 --dashboard.bindAddress=0.0.0.0:8081 --dashboard.auth.username="admin" --dashboard.auth.passwordHash="87ee6727b04474a25c5a4fe3914488d56363fa1d6cc03d03e70a424fa4d87a7c" --dashboard.auth.passwordSalt="d46309210eb66b523f3c7ac8c2f79e4856505dc0d3621acb5e79ae5f5bf27c73"
+```
+
+
 ### On the peer node
 
 ```bash
@@ -243,7 +256,8 @@ export "FAUCET_PRV_KEY=de52b9964dda96564e9fab362ab16c2669c715c6a2a853bece8a25fc5
 
 ## Step 4: check status
 
-Now the dashboard of the local node should be accessible on <http://127.0.0.1:8081/dashboard>
+Now the dashboard of the validator node should be accessible on <http://127.0.0.1:8081/dashboard>
+(User: admin, Password: admin)
 
 ## Further steps
 
