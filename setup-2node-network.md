@@ -264,5 +264,5 @@ Now the dashboard of the validator node should be accessible on <http://127.0.0.
 To add more peers (no validator) it should be sufficient to start the iota-core process on the nodes
 
 ```bash
-./iota-core -c config_defaults.json --p2p.bootstrapPeers=/dns/192.168.178.33/tcp/15600/p2p/12D3KooWPpHpFWUFKi3s1D5BnkAdPAxfiEoLV1TQ97rj947pA3EX
+./iota-core -c config_defaults.json --p2p.autopeering.bootstrapPeers=/dns/192.168.178.33/tcp/15600/p2p/12D3KooWPpHpFWUFKi3s1D5BnkAdPAxfiEoLV1TQ97rj947pA3EX
 ```
