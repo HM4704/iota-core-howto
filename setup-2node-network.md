@@ -249,7 +249,7 @@ export "FAUCET_PRV_KEY=de52b9964dda96564e9fab362ab16c2669c715c6a2a853bece8a25fc5
 ### On the peer node
 
 ```bash
-./iota-core -c config_defaults.json --p2p.bootstrapPeers=/dns/192.168.178.33/tcp/15600/p2p/12D3KooWPpHpFWUFKi3s1D5BnkAdPAxfiEoLV1TQ97rj947pA3EX
+./iota-core -c config_defaults.json ---p2p.autopeering.bootstrapPeers=/dns/192.168.178.33/tcp/15600/p2p/12D3KooWPpHpFWUFKi3s1D5BnkAdPAxfiEoLV1TQ97rj947pA3EX
 ```
 
 <b>!!! ATTENTION: Use the ip and id of your bootstrap node in the above command.!!!</b>
